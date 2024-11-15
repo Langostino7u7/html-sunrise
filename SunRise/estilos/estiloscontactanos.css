@@ -1,0 +1,42 @@
+.padre{
+    background-color: blue;
+    display: flex;
+    grid-column: auto auto;
+}
+.c{
+    background-color: aquamarine;
+    height: 300px;
+}
+
+.caja1{
+    width: 20%;
+}
+.caja2{
+    width: 30%;
+    background-color: brown;
+}
+.caja3{
+    width: 30%;
+    background-color: chocolate;
+}
+.caja4{
+    width: 20%;
+}
+h2{
+    color: #ffffff;
+    font-size: 35px;
+    text-align: center;
+}
+.titulo2{
+    margin-top: 20px;
+}
+.numerotelefono{
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+}
+.imgs{
+    width: 80px;
+    margin-left: 40%;
+   margin-bottom: 40px;
+}

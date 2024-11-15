@@ -1,0 +1,131 @@
+*{
+    margin: 0px 0px 0px 0px;
+}
+body{
+    background-image: url(/imagenes/solsss.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-color: black;
+}
+.caja{
+    text-align: center;
+}
+
+.grid_layout{
+    display: flex;
+}
+#usuario{
+    width: 500px;
+    height: 50px;
+    border-radius: 100px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family: cursive;
+    padding-left: 25px;
+}
+#contraseña{
+    width: 500px;
+    height: 50px;
+    border-radius: 100px;
+    border: 2px solid black;
+    font-size: 30px;
+    font-family: cursive;
+    padding-left: 25px;
+}
+#boton{
+    width: 200px;
+    height: 50px;
+    border-radius: 100px;
+    border: 2px solid black;
+    margin-top: 25px;
+    background-image: url(/imagenes/onyqx5ayj1kb1.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-color: black;
+    color: aliceblue;
+    font-family: cursive;
+}
+.c1{
+    padding: 50px 50px 50px 50px;
+    margin-top: 150px;
+    margin-left: 250px;
+    background-color: rgba(126, 126, 126, 0.445);
+    border-radius: 40px;
+    font-family: cursive;
+}
+h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: cursive;
+}
+.sol{
+    width: 500px;
+    height: 500px;
+    margin-left: 100px;
+    margin-top: 70px;
+}
+@media(max-width: 500px){
+    .caja{
+        text-align: center;
+        justify-content: center;
+    }
+    .grid_layout{
+       display: grid;
+    }
+    #usuario{
+        width: 200px;
+        height: 50px;
+        border-radius: 100px;
+        border: 2px solid black;
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-family: cursive;
+        padding-left: 5px;
+    }
+    #contraseña{
+        width: 200px;
+        height: 50px;
+        border-radius: 100px;
+        border: 2px solid black;
+        font-size: 20px;
+        font-family: cursive;
+        padding-left: 5px;
+    }
+    #boton{
+        width: 100px;
+        height: 50px;
+        border-radius: 100px;
+        border: 2px solid black;
+        margin-top: 25px;
+        background-image: url(/imagenes/onyqx5ayj1kb1.gif);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        background-color: black;
+        color: aliceblue;
+        font-family: cursive;
+    }
+    .c1{
+        padding: 10px 10px 10px 10px;
+        margin-left: 0px;
+        background-color: rgba(126, 126, 126, 0.445);
+        border-radius: 40px;
+        font-family: cursive;
+    }
+    h1{
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-family: cursive;
+    }
+    .sol{
+        width: 200px;
+        height: 200px;
+        margin-right: 100px;
+    }
+    .c2{
+        justify-content: center;
+    }
+}

@@ -1,0 +1,421 @@
+body{
+    background-color: #0f0f0f;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo2{
+    width: 300px;
+    height: 100px;
+    padding-left: 10px
+}
+#uno{
+   margin-top: 5%;
+    display: flex;
+    
+}
+
+.objetivo{
+    margin-left: 20px;
+    width: 50%;
+    height: 50%;
+    background-color: #e7ffd1;
+    justify-content: center;
+    text-align: center;
+    color: #0f0f0f;
+}
+
+.metas{
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 50%;
+    height: 50%;
+    background-color: #e7ffd1;
+    justify-content: center;
+    text-align: center;
+    color: #0f0f0f;
+}
+
+
+
+#dos{
+    margin-top: 5%;
+     display: flex;
+ }
+ 
+ .objetivo2{
+     margin-left: 20px;
+     width: 50%;
+     height: 50%;
+     background-color: #FFC300;
+ }
+ 
+ .metas2{
+     margin-left: 20px;
+     margin-right: 10px;
+     width: 50%;
+     height: 50%;
+     background-color: #FFC300;
+ }
+ :root {
+    --color_primario: #FFB700;
+    --color_primario_suave: black;
+    --color_blanco: #fff;
+    --altura_header: 90px;
+    --padding_left_right: 2rem;
+    --ancho_maximo: 1200px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ol,ul{
+    list-style: none;
+}
+.header {
+    height: var(--altura_header);
+    background-color: var(--color_primario);
+}
+.navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 var(--padding_left_right);
+}
+.menu_hamburguesa{
+    display: none;
+}
+.menu_hamburguesa:checked + .ul_links {
+    height: calc(100vh - var(--altura_header));
+}
+.logo {
+    width: 200px;
+    height: 80px;
+}
+.list_icon {
+    color: var(--color_blanco);
+    cursor: pointer;
+}
+.ul_links {
+    width: 100%;
+    background-color: var(--color_primario_suave);
+    position: absolute;
+    top: var(--altura_header);
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    /* height: calc(100vh - var(--altura_header)); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    transition: all .3s;
+}
+.link {
+    font-size: 3em;
+    color: var(--color_blanco);
+    font-weight: bold;
+}
+.blanco{
+    font-size: 50px;
+    color: #ffffff;
+}
+@media (max-width: 1078px){
+    .blanco {
+        color: #ffffff;
+        }
+    
+    .icons:hover {
+        transform:scale(1,1.2);
+        transition: 0.05ms;
+    }
+    
+    .a:hover {
+        transform:scale(1,1.2);
+        transition: 0.05ms;
+        }
+    
+    .logo2:hover {
+        transform:scale(1,1.2);
+        transition: 0.05ms;
+    }
+    .a{
+        width: 100px;
+       height: 190px;
+        margin-left: auto;
+       margin-right: auto;
+   }
+        .labe_hamburguesa {
+            display: flex;
+        }
+        .ul_links{
+            position: static;
+            width: auto;
+            height: auto;
+            flex-direction: row;
+            gap: 2rem;
+        }
+        .link{
+            font-size: 1.2rem;
+            transition: all .3s;
+            padding: .2rem .7rem;
+        }
+        .link:hover{
+            background-color: #EBB912;
+        }
+            /* Estilos para la etiqueta <header> */
+        .header {
+            height: var(--altura_header);
+            background-color: var(--color_primario);
+        }
+    
+        /* Estilos para la etiqueta <nav> */
+        .navbar {
+            justify-content: center;
+            padding: 0;
+        }
+    
+        /* Estilos para la etiqueta <ul> */
+        .ul_links {
+            position: static;
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            z-index: 1;
+            pointer-events: none; /* Desactiva el evento de puntero (como si el usuario no pudiera interactuar con el elemento) */
+            opacity: 0; /* Establece la opacidad del elemento a 0 (transparente) */
+            transition: all .3s;
+            flex-direction: column;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .3s ease-out;
+            top: var(--altura_header);
+        }
+        input[type="checkbox"]:checked ~ ul.ul_links {
+        pointer-events: auto; /* Reactiva el evento de puntero (como si el usuario pudiera interactuar con el elemento) */
+        opacity: 1;
+        max-height: 100vh - var(--altura_header);
+        }
+        .li_links {
+        margin: 0;
+        } 
+        body{
+            background-color: #0f0f0f;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .logo2{
+            width: 300px;
+            height: 100px;
+            padding-left: 10px
+        }
+        #uno{
+           margin-top: 5%;
+        }
+        
+        .objetivo{
+            margin-left: 20px;
+            width: 50%;
+            height: 50%;
+            background-color: #e7ffd1;
+            justify-content: center;
+            text-align: center;
+            color: #0f0f0f;
+        }
+        
+        .metas{
+            margin-left: 20px;
+            margin-right: 10px;
+            width: 50%;
+            height: 50%;
+            background-color: #e7ffd1;
+            justify-content: center;
+            text-align: center;
+            color: #0f0f0f;
+        }
+        
+        #dos{
+            margin-top: 5%;
+         }
+         
+         .objetivo2{
+             margin-left: 20px;
+             width: 50%;
+             height: 50%;
+             background-color: #FFC300;
+         }
+         
+         .metas2{
+             margin-left: 20px;
+             margin-right: 10px;
+             width: 50%;
+             height: 50%;
+             background-color: #FFC300;
+         }
+        h2{
+            font-size: 15px;
+        }
+        .cohete{
+            width: 100px;
+            height: 130px;
+        }
+    }
+    @media (max-width: 767px) {
+        /* Estilos para la etiqueta <header> */
+        .header {
+            height: var(--altura_header);
+            background-color: var(--color_primario);
+        }
+        
+        /* Estilos para la etiqueta <nav> */
+        .navbar {
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+        }
+        
+        /* Estilos para la etiqueta <ul> */
+        .ul_links {
+            position: absolute;
+            top: var(--altura_header);
+            left: 0;
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            transition: all .3s;
+            z-index: 1;
+            pointer-events: none; /* Desactiva el evento de puntero (como si el usuario no pudiera interactuar con el elemento) */
+            opacity: 0; /* Establece la opacidad del elemento a 0 (transparente) */
+            transition: all .3s;
+            flex-direction: column;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .3s ease-out;
+        }
+        
+        /* Estilos para la etiqueta <input> */
+        input[type="checkbox"] {
+            display: block;
+        }
+        
+        /* Estilos para la etiqueta <label> */
+        label.labe_hamburguesa {
+            display: block;
+            position: relative;
+            padding: 0.5rem 1rem;
+        }
+        
+        /* Estilos para la etiqueta <svg> */
+        svg.list_icon {
+            width: 2rem;
+            height: 2rem;
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        /* Estilos para la etiqueta <input> cuando está seleccionada */
+        input[type="checkbox"]:checked ~ label.labe_hamburguesa svg.list_icon {
+            transform: rotate(180deg);
+        }
+        
+        /* Estilos para la etiqueta <input> cuando está seleccionada */
+        input[type="checkbox"]:checked ~ ul.ul_links {
+            height: calc(100vh - var(--altura_header));
+            pointer-events: auto; /* Reactiva el evento de puntero (como si el usuario pudiera interactuar con el elemento) */
+            opacity: 1;
+            max-height: 100vh - var(--altura_header);
+        }
+        .li_links {
+          margin: 0;
+        }
+        body{
+            background-color: #0f0f0f;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .logo2{
+            width: 300px;
+            height: 100px;
+            padding-left: 10px
+        }
+        #uno{
+           margin-top: 5%;
+        }
+        
+        .objetivo{
+            margin-left: 20px;
+            width: 50%;
+            height: 50%;
+            background-color: #e7ffd1;
+            justify-content: center;
+            text-align: center;
+            color: #0f0f0f;
+        }
+        
+        .metas{
+            margin-left: 20px;
+            margin-right: 10px;
+            width: 50%;
+            height: 50%;
+            background-color: #e7ffd1;
+            justify-content: center;
+            text-align: center;
+            color: #0f0f0f;
+        }
+        
+        #dos{
+            margin-top: 5%;
+         }
+         
+         .objetivo2{
+             margin-left: 20px;
+             width: 50%;
+             height: 50%;
+             background-color: #FFC300;
+         }
+         
+         .metas2{
+             margin-left: 20px;
+             margin-right: 10px;
+             width: 50%;
+             height: 50%;
+             background-color: #FFC300;
+         }
+        h2{
+            font-size: 15px;
+        }
+        .cohete{
+            width: 150px;
+            height: 100px;
+        }
+    }
